@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/* CSS Document */
+body { 
+	background-color: antiquewhite;
+	margin-left:100px;
+	margin-right: 100px;
+	width: 800px;
+}
+
+/*master group site property */
+
+.site{
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+	
+
+
+}
+
+table{
+	align-content: space-around;
+	align-content: center;
+	grid-auto-flow: row;
+	flex-wrap: wrap;
+}
+/*CSS grid properties*/
+
+.grid-container {
+	display: grid;
+	/*  grid-row-gaps: auto;*/
+	grid-template-columns: 200px 200px 200px 200px 200px 200px;
+	grid-template-rows: 75px 75px 75px 75px 75px 75px;
+	grid-auto-flow: row;
+	align-content: space-evenly;
+	background-color: silver;
+	padding: 2px;
+	column-gap: 15px;
+		
+ }
+
+.row{
+	display: inline-flex;
+	grid-template-columns: 50px 50px 50px 50px 50px 50px;
+	grid-template-rows: auto;
+	flew-grow:44;
+	grid-auto-flow: column;
+	grid-auto-flow: row;
+	align-content: space-between;
+	background-color: burlywood;
+}
+
+/* content grouping */
+
+.boxhold1{
+	column-width: fr1 fr1;
+	align-content: center;
+	left:0px;
+	bottom:300px;
+}
+
+/* Table Layout */
+
+.table-cont{
+	
+	column-with: fr1 fr1;
+	text-align: right;
+	text-align: left;
+	table-layout: auto;
+	column-span: all;
+}
+
+/*
+.boxhold2{
+	column-width: fr1 fr1;
+	vertical-align: bottom;
+
+}*/
+
+/*
+.boxhold3{
+	column-width: fr1 fr1 fr1;
+	
+}
+*/
+
+/* Image Control */
+
+.featured-image {
+	position:relative;
+	top: 150px;
+	right:0px;
+	left:0;
+	float:left;
+	margin-right: 1.5em;
+	padding: 10px;
+	background:white;
+	box-shadow:3px 3px; 
+	
+}
+
+img{ 
+display:block;
+}
+
+
+.container{
+	display: inline-table;
+	column-fill: auto;
+	table-layout: auto;
+	columns: auto width;
+
+	}
+
+h1{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 14;
+	font-display: fallback;
+}
+
+/*Row property setup*/
+
+
+
+.logo{align-items: realitive;
+	right: 40px;
+	}
+ Flex Nav menu properties with anamation
+
+.flexNav{
+	display:grid;
+	background-color: burlywood;
+	
+	/*grid-auto-rows: repeat(2, 1fr) 2fr;*/
+	
+}
+
+.nav-item:hover {
+	background-color: burlywood;
+	color: white;
+	text-align: center;
+}
+
+.box{
+	font-size: 15px;
+	color: black;
+	padding: 0px;
+	text-align: center;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-weight: bold;
+	box-sizing: border-box;
+	width: 200px;
+	background-color: antiquewhite;
+	border: 0px solid #FFD9D9bl	
+}
+
+.box:hover {
+	background-color: burlywood;
+	color: white;
+	text-align: center;
+}
+
+a:visted{
+	background:#080EE4;
+}
+
+a:hover {
+	color:black;
+}
+p{align-content: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif","Times New Roman", "serif";
+	font-size: 14px;
+	margin-left: 5px;
+	margin-bottom: 4px;
+	margin-right: 5px;
+	position: relative;
+	
+}
+
+a:link{
+	color:white;
+	
+}
+
+a{
+	background:black;
+	padding:10px;
+}	
+	
+
+.flex-boxlow{
+	font-size: 15px;
+	color: blue;
+	padding: 10px;
+	text-align: center;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-weight: 10;
+	box-sizing: border-box;
+	width: 200px;
+	justify-content: flex-start;
+	object-position: left;
+		
+}
+
+/* Home page images*/
+
+.head-imag{
+	display: flex;
+	position: burlywood; top:0; left: 0; 
+	flex-direction: row;
+	grid-auto-flow: row;
+	align-content: center;
+}
+
+.middle-imag {
+	flex-direction: row;
+	grid-auto-flow: row;
+	align-items: center;
+	align-self: auto;
+	overflow-x: auto;
+	flex-shrink: 500px;
+
+}
+
+/* Anamated button */
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: antiquewhite; 
+  color: black; 
+  border: 2px solid #0B0000;
+}
+
+.button1:hover {
+  background-color: burlywood;
+  color: white;
+}
